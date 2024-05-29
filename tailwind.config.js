@@ -54,6 +54,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero': 'url(/hero-gym.webp)',
+        'background': 'url(/background.jpg)',
       },
       borderRadius: {
         lg: "var(--radius)",

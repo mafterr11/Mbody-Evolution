@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="relative bg-hero bg-cover bg-no-repeat bg-center h-screen flex items-center justify-start">
             <div className="absolute bottom-0 right-32 z-30">
-            <Image src="/hero2.png" width={400} height={400} alt="Hero Micky" quality={100} />
+            <Image src="/hero-micky.png" width={900} height={900} alt="Hero Micky" quality={100} />
         </div>
       {/* Hero container */}
       <div className="relative p-36 z-30 flex items-center justify-center">
