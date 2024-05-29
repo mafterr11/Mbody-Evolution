@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply text-white tracking-[1px];
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-[1px];
+  }
+
+  h1 {
+    @apply text-[28px] md:text-[32px] lg:text-[37px] xl:text-[60px] 2xl:text-[65px] font-bold leading-[85px];
+  }
+  h2 {
+    @apply text-[25px] md:text-[32px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px] font-medium;
+  }
+  h3 {
+    @apply text-[22px] md:text-[26px] lg:text-[28px] 2xl:text-[30px] font-medium leading-[47px];
+  }
+  h4 {
+    @apply text-[18px] md:text-[22px] lg:text-[27px] xl:text-[22px] 2xl:text-[23px] font-medium;
+  }
+  h5 {
+    @apply 2xl:text-[21px] font-semibold;
+  }
+  p {
+    @apply text-white text-[16px] md:text-[18px] lg:text-[22px] xl:text-[16px] 2xl:text-[18px] font-normal leading-[32spx];
+  }
+  a {
+    @apply transition-all duration-300 cursor-pointer;
+  }
+  .nav-text {
+    @apply xl:text-[18px] font-normal;
+  }
+}
+
+/* Nav hover */
+.hover:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.hover span {
+  display: inline-block;
+}
+
+.hover span:after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  display: block;
+  background: #C60226;
+  transition: 300ms;
+}
+
+.hover span:hover:after {
+  width: 100%;
+}
+
+/* Normal hover */
+.hover-nav:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hover-nav span {
+  display: inline-block;
+}
+
+.hover-nav span:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #C60226;
+  transition: 300ms;
+}
+
+.hover-nav span:hover:after {
+  width: 100%;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: #C60226;
+}
