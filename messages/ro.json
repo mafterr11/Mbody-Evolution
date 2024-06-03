@@ -18,5 +18,69 @@
     "title": "Atinge-ți obiectivele cu sesiuni de antrenament personalizate!",
     "contact-button": "Evoluția ta începe aici",
     "contact-link": "/ro/servicii"
+  },
+  "Despre": {
+    "title": "DESPRE MINE",
+    "p1": "Numele meu este Mihaela Bordeianu, sunt personal trainer, tehnician nutriționist și sportivă de performanță.",
+    "p2": "Încă din copilărie, am fost atrasă de sport și competiție, investind multă pasiune în fiecare activitate sportivă în care m-am implicat, însa m-am și confruntat cu multe dintre dificultățile obișnuite pentru un începător, cum ar fi lipsa încrederii în sine și nemulțumirea față de propria formă fizică, iar cu un astfel de mindset și fără cunoștințe solide, progresul a întârziat să apară.",
+    "p3": {
+      "1": "Pe măsură ce m-am aprofundat în acest domeniu,",
+      "2": "am realizat că nutriția joacă un rol esențial",
+      "3": " și am continuat să mă specializez și în această direcție. Cred că nimeni nu poate urma o dietă strictă la nesfârșit, de aceea îi învăț pe cei cu care lucrez să fie flexibili, să integreze și alimentele mai puțin sănătoase în alimentație și, în același timp, să-și atingă și să-și mențină obiectivele pe termen lung."
+    },
+    "p4": {
+      "1": "Acesta este un",
+      "2": "stil de viață",
+      "3": " , nu un compromis pe termen scurt, motiv pentru care este esențial să găsim abordarea optimă, atât în alimentație, cât și în antrenament, pentru obiectivele și stilul tău de viață."
+    }
+  },
+  "Calculator": {
+    "p1": {
+      "title": "Pasul 1: Informații de bază",
+      "sex": {
+        "male": "Masculin",
+        "female": "Feminin"
+      },
+      "age": "Vârstă",
+      "height": "Înălțime",
+      "weight": "Greutate"
+    },
+    "p2": {
+      "title": "Pasul 2: Nivelul de activitate",
+      "sedentary": {
+        "title": "Sedentar",
+        "text": "Petreceți majoritatea zilei stând, cu puțină sau fără exercițiu fizic"
+      },
+      "active": {
+        "title": "Activ",
+        "text": "Antrenamente ușoare de 3 ori/săptămână"
+      },
+      "veryActive": {
+        "title": "Foarte activ",
+        "text": "Antrenamente de atlet de 5-7 ori/săptămână"
+      },
+      "extraActive": {
+        "title": "Extra activ",
+        "text": "Exerciții fizice foarte intense zilnic sau muncă fizică"
+      }
+    },
+    "p3": {
+      "title": "Pasul 3: Selectați obiectivul",
+      "1": "Menținere greutate",
+      "2": "Pierdere în greutate",
+      "3": "Creștere în greutate"
+    },
+    "results": {
+      "title": "Rezultatele tale:",
+      "target": "Target caloric zilnic",
+      "kcal": "kcal/zi",
+      "macro": {
+        "title": "Macronutrienți:",
+        "fat": "Grăsimi",
+        "protein": "Proteine",
+        "carbs": "Carbohidrați"
+      }
+    },
+    "button": "Calculează acum"
   }
 }

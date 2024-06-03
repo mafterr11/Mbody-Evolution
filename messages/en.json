@@ -18,5 +18,69 @@
     "title": "Achieve your goals with personalized training sessions!",
     "contact-button": "Your journey starts here",
     "contact-link": "/en/services"
+  },
+  "Despre": {
+    "title": "ABOUT ME",
+    "p1": "My name is Mihaela Bordeianu, I am a personal trainer, nutrition technician, and professional athlete.",
+    "p2": "Since childhood, I have been attracted to sports and competition, investing a lot of passion in every sports activity I engaged in, but I also faced many of the common difficulties for a beginner, such as lack of self-confidence and dissatisfaction with my own physical shape. With such a mindset and without solid knowledge, progress was slow to appear.",
+    "p3": {
+      "1": "As I delved deeper into this field,",
+      "2": "I realized that nutrition plays an essential role",
+      "3": " and I continued to specialize in this direction. I believe that no one can follow a strict diet indefinitely, which is why I teach those I work with to be flexible, to integrate less healthy foods into their diet, and at the same time, to achieve and maintain their long-term goals."
+    },
+    "p4": {
+      "1": "This is a",
+      "2": "lifestyle",
+      "3": ", not a short-term compromise, which is why it is essential to find the optimal approach, both in diet and training, for your goals and lifestyle."
+    }
+  },
+  "Calculator": {
+    "p1": {
+      "title": "Step 1: Basic Information",
+      "sex": {
+        "male": "Male",
+        "female": "Female"
+      },
+      "age": "Age",
+      "height": "Height",
+      "weight": "Weight"
+    },
+    "p2": {
+      "title": "Step 2: Activity Level",
+      "sedentary": {
+        "title": "Sedentary",
+        "text": "Spend most of the day sitting, with little or no physical exercise"
+      },
+      "active": {
+        "title": "Active",
+        "text": "Light workouts 3 times/week"
+      },
+      "veryActive": {
+        "title": "Very active",
+        "text": "Athlete training 5-7 times/week"
+      },
+      "extraActive": {
+        "title": "Extra active",
+        "text": "Very intense physical exercise daily or physical labor"
+      }
+    },
+    "p3": {
+      "title": "Step 3: Select Goal",
+      "1": "Maintain weight",
+      "2": "Lose weight",
+      "3": "Gain weight"
+    },
+    "results": {
+      "title": "Your Results:",
+      "target": "Daily Caloric Target",
+      "kcal": "kcal/day",
+      "macro": {
+        "title": "Macronutrients:",
+        "fat": "Fats",
+        "protein": "Proteins",
+        "carbs": "Carbohydrates"
+      }
+    },
+    "button": "Calculate now"
   }
 }

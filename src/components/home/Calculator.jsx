@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import { useTranslations } from "next-intl";
 
 const Calculator = () => {
+  const t = useTranslations("Calculator");
   const [form, setForm] = useState({
     sex: "",
     age: "",
@@ -78,9 +80,9 @@ const Calculator = () => {
         Calculator caloric
       </h1> */}
       {/* Step 1 */}
-      <div className="rounded-lg bg-white/10 p-6 shadow-md ">
+      <div className="rounded-lg bg-white/10 p-6 shadow-md">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
-          Pasul 1: Informații de bază
+          {t("p1.title")}
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
@@ -91,12 +93,12 @@ const Calculator = () => {
               onChange={handleChange}
               className="h-[3rem] w-[10rem] rounded p-2 text-black placeholder:text-black"
             >
-              <option value="female">Feminin</option>
-              <option value="male">Masculin</option>
+              <option value="female">{t("p1.sex.female")}</option>
+              <option value="male">{t("p1.sex.male")}</option>
             </select>
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
-            <label className="mb-2 block">Vârstă:</label>
+            <label className="mb-2 block">{t("p1.age")}:</label>
             <Input
               type="number"
               name="age"
@@ -107,7 +109,7 @@ const Calculator = () => {
             />
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
-            <label className="mb-2 block">Înălțime (cm):</label>
+            <label className="mb-2 block">{t("p1.height")} (cm):</label>
             <Input
               type="number"
               name="height"
@@ -118,7 +120,7 @@ const Calculator = () => {
             />
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
-            <label className="mb-2 block">Greutate (kg):</label>
+            <label className="mb-2 block">{t("p1.weight")} (kg):</label>
             <Input
               type="number"
               name="weight"
@@ -131,14 +133,14 @@ const Calculator = () => {
         </div>
       </div>
       {/* Step 2 */}
-      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md ">
+      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
-          Pasul 2: Nivelul de activitate
+          {t("p2.title")}
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
           {/* First */}
           <label
-            className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
+            className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -146,17 +148,14 @@ const Calculator = () => {
               value="sedentary"
               checked={form.activityLevel === "sedentary"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Sedentar
-            <p className="mt-2 text-[15px]">
-              Petreceți majoritatea zilei stând, cu puțină sau fără exercițiu
-              fizic
-            </p>
+            {t("p2.sedentary.title")}
+            <p className="mt-2 text-[15px]">{t("p2.sedentary.text")}</p>
           </label>
           {/* Second */}
           <label
-            className={` ${form.activityLevel === "active" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
+            className={` ${form.activityLevel === "active" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -164,16 +163,14 @@ const Calculator = () => {
               value="active"
               checked={form.activityLevel === "active"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Activ
-            <p className="mt-2 text-[15px]">
-              Antrenamente ușoare de 3 ori/săptămână
-            </p>
+            {t("p2.active.title")}
+            <p className="mt-2 text-[15px]">{t("p2.active.text")}</p>
           </label>
           {/* Third */}
           <label
-            className={` ${form.activityLevel === "veryActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
+            className={` ${form.activityLevel === "veryActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -181,15 +178,13 @@ const Calculator = () => {
               value="veryActive"
               checked={form.activityLevel === "veryActive"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Foarte activ
-            <p className="mt-2 text-[15px]">
-              Antrenamente de atlet de 5-7 ori/săptămână
-            </p>
+            {t("p2.veryActive.title")}
+            <p className="mt-2 text-[15px]">{t("p2.veryActive.text")}</p>
           </label>
           <label
-            className={` ${form.activityLevel === "extraActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
+            className={` ${form.activityLevel === "extraActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -197,23 +192,21 @@ const Calculator = () => {
               value="extraActive"
               checked={form.activityLevel === "extraActive"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Extra activ
-            <p className="mt-2 text-[15px]">
-              Exerciții fizice foarte intense zilnic sau muncă fizică
-            </p>
+            {t("p2.extraActive.title")}
+            <p className="mt-2 text-[15px]">{t("p2.extraActive.text")}</p>
           </label>
         </div>
       </div>
       {/* Step 3 */}
-      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md ">
+      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
-          Pasul 3: Selectați obiectivul
+          {t("p3.title")}
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           <label
-            className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
+            className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -221,12 +214,12 @@ const Calculator = () => {
               value="maintain"
               checked={form.goal === "maintain"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Menținere greutate
+            {t("p3.1")}
           </label>
           <label
-            className={` ${form.goal === "weightLoss" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
+            className={` ${form.goal === "weightLoss" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -234,12 +227,12 @@ const Calculator = () => {
               value="weightLoss"
               checked={form.goal === "weightLoss"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Pierdere în greutate
+            {t("p3.2")}
           </label>
           <label
-            className={` ${form.goal === "weightGain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
+            className={` ${form.goal === "weightGain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out hover:cursor-pointer`}
           >
             <input
               type="radio"
@@ -247,41 +240,41 @@ const Calculator = () => {
               value="weightGain"
               checked={form.goal === "weightGain"}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
             />
-            Creștere în greutate
+            {t("p3.3")}
           </label>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col justify-between md:flex-row">
         {/* Results */}
-        <div className="backdrop--xl mt-6 w-fit rounded-lg bg-white/5 p-6 shadow-md ">
-          <h2 className="mb-4 text-2xl font-semibold">Rezultatele tale:</h2>
+        <div className="backdrop--xl mt-6 w-fit rounded-lg bg-white/5 p-6 shadow-md">
+          <h2 className="mb-4 text-2xl font-semibold">{t("results.title")}</h2>
           <p className="mb-2">
             Basal Metabolic Rate (BMR):{" "}
             <span className="font-bold text-accent">
               {" "}
-              {results.bmr} kcal/zi
+              {results.bmr} {t("results.kcal")}
             </span>
           </p>
           <p>
-            Target caloric zilnic:{" "}
+            {t("results.target")}{" "}
             <span className="font-bold text-accent">
               {" "}
-              {results.calorieIntake} kcal/zi
+              {results.calorieIntake} {t("results.kcal")}
             </span>
           </p>
-          <p className="my-2 font-bold">Macronutrienți:</p>
+          <p className="my-2 font-bold">{t("results.macro.title")}</p>
           <p>
-            Grăsimi:{" "}
+          {t("results.macro.fat")}{" "}
             <span className="font-bold text-accent"> {results.fats} g</span>
           </p>
           <p>
-            Proteine:{" "}
+          {t("results.macro.protein")}:{" "}
             <span className="font-bold text-accent"> {results.protein} g</span>
           </p>
           <p>
-            Carbohidrați:{" "}
+          {t("results.macro.carbs")}:{" "}
             <span className="font-bold text-accent"> {results.carbs} g</span>
           </p>
         </div>
@@ -290,7 +283,7 @@ const Calculator = () => {
           onClick={calculateResults}
           className="mt-6 font-bold transition-all duration-300 ease-in-out active:scale-[0.96]"
         >
-          Calculează acum
+          {t("button")}
         </Button>
       </div>
     </div>
