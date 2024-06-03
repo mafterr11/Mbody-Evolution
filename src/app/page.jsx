@@ -1,13 +1,5 @@
-import Calculator from "@/components/home/Calculator";
-import Despre from "@/components/home/Despre";
-import Hero from "@/components/home/Hero";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Despre />
-      <Calculator />
-    </>
-  );
+export default function RootPage() {
+  redirect("/ro");
 }

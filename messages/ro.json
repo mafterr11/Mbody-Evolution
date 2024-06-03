@@ -1,0 +1,22 @@
+{
+  "Nav": {
+    "home": {
+      "name": "Acasă",
+      "link": "/ro"
+    },
+    "services": {
+      "name": "Servicii",
+      "link": "/ro/servicii"
+    },
+    "contact": {
+      "name": "Contact",
+      "link": "/ro/contact"
+    }
+  },
+  "Hero": {
+    "subtitle": "Transformă-ți stilul de viață",
+    "title": "Atinge-ți obiectivele cu sesiuni de antrenament personalizate!",
+    "contact-button": "Evoluția ta începe aici",
+    "contact-link": "/ro/servicii"
+  }
+}

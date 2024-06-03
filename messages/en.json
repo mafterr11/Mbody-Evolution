@@ -1,0 +1,22 @@
+{
+  "Nav": {
+    "home": {
+      "name": "Home",
+      "link": "/en"
+    },
+    "services": {
+      "name": "Services",
+      "link": "/en/services"
+    },
+    "contact": {
+      "name": "Contact",
+      "link": "/en/contact"
+    }
+  },
+  "Hero": {
+    "subtitle": "Transform your lifestyle",
+    "title": "Achieve your goals with personalized training sessions!",
+    "contact-button": "Your journey starts here",
+    "contact-link": "/en/services"
+  }
+}
