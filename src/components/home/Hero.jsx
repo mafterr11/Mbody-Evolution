@@ -4,25 +4,31 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative bg-hero bg-cover bg-no-repeat bg-center h-screen flex items-center justify-start">
-            <div className="absolute bottom-0 right-32 z-30">
-            <Image src="/hero-micky.png" width={900} height={900} alt="Hero Micky" quality={100} />
-        </div>
+    <div className="relative flex h-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20">
+      {/* Image */}
+      <div className="absolute bottom-0 right-10 z-30 xl:right-0">
+        <Image
+          src="/hero-micky.png"
+          width={1000}
+          height={1000}
+          alt="Hero Micky"
+          quality={100}
+        />
+      </div>
       {/* Hero container */}
-      <div className="relative p-36 z-30 flex items-center justify-center">
-        {/* Left side */}
-        <div>
-          <h4 className="text-accent font-semibold">Transformă-ți stilul de viață</h4>
-          <h1 className="mb-6 max-w-4xl">
-            Atinge-ți obiectivele cu sesiuni de antrenament personalizate!
-          </h1>
-          <Button><span>Evoluția ta începe aici</span></Button>
-        </div>
-        {/* Right side */}
-    
+      <div className="relative z-30 max-md:text-center xl:p-36">
+        <h4 className="font-semibold text-accent">
+          Transformă-ți stilul de viață
+        </h4>
+        <h1 className="mb-6 xl:max-w-4xl">
+          Atinge-ți obiectivele cu sesiuni de antrenament personalizate!
+        </h1>
+        <Button>
+          <span>Evoluția ta începe aici</span>
+        </Button>
       </div>
       {/* Black overlay */}
-      <div className="bg-black/65 absolute inset-0" />
+      <div className="absolute inset-0 bg-black/65" />
     </div>
   );
 };
