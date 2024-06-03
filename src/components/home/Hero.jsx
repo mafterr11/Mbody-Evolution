@@ -20,7 +20,7 @@ const Hero = () => {
         <h4 className="font-semibold text-accent">
           Transformă-ți stilul de viață
         </h4>
-        <h1 className="mb-6 xl:max-w-4xl">
+        <h1 className="mb-6 px-2 xl:max-w-4xl">
           Atinge-ți obiectivele cu sesiuni de antrenament personalizate!
         </h1>
         <Button>

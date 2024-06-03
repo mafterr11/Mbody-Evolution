@@ -78,67 +78,67 @@ const Calculator = () => {
         Calculator caloric
       </h1> */}
       {/* Step 1 */}
-      <div className="rounded-lg bg-white/10 p-6 shadow-md filter backdrop-blur-xl">
+      <div className="rounded-lg bg-white/10 p-6 shadow-md ">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
           Pasul 1: Informații de bază
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
+          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
             <label className="mb-2 block">Sex:</label>
             <select
               name="sex"
               value={form.sex}
               onChange={handleChange}
-              className="h-[3rem] w-[10rem] rounded border border-gray-300 p-2 text-black placeholder:text-black"
+              className="h-[3rem] w-[10rem] rounded p-2 text-black placeholder:text-black"
             >
               <option value="female">Feminin</option>
               <option value="male">Masculin</option>
             </select>
           </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
+          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
             <label className="mb-2 block">Vârstă:</label>
             <Input
               type="number"
               name="age"
               value={form.age}
               onChange={handleChange}
-              className="w-full rounded border border-gray-300 p-2 text-black placeholder:text-black"
+              className="w-full rounded p-2 text-black placeholder:text-black"
               placeholder="Introduceți vârsta"
             />
           </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
+          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
             <label className="mb-2 block">Înălțime (cm):</label>
             <Input
               type="number"
               name="height"
               value={form.height}
               onChange={handleChange}
-              className="w-full rounded border border-gray-300 p-2 text-black placeholder:text-black"
+              className="w-full rounded p-2 text-black placeholder:text-black"
               placeholder="cm"
             />
           </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
+          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
             <label className="mb-2 block">Greutate (kg):</label>
             <Input
               type="number"
               name="weight"
               value={form.weight}
               onChange={handleChange}
-              className="w-full rounded border border-gray-300 p-2 text-black placeholder:text-black"
+              className="w-full rounded p-2 text-black placeholder:text-black"
               placeholder="kg"
             />
           </div>
         </div>
       </div>
       {/* Step 2 */}
-      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md filter backdrop-blur-xl">
+      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md ">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
           Pasul 2: Nivelul de activitate
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
           {/* First */}
           <label
-            className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+            className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -156,7 +156,7 @@ const Calculator = () => {
           </label>
           {/* Second */}
           <label
-            className={` ${form.activityLevel === "active" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+            className={` ${form.activityLevel === "active" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -173,7 +173,7 @@ const Calculator = () => {
           </label>
           {/* Third */}
           <label
-            className={` ${form.activityLevel === "veryActive" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+            className={` ${form.activityLevel === "veryActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -189,7 +189,7 @@ const Calculator = () => {
             </p>
           </label>
           <label
-            className={` ${form.activityLevel === "extraActive" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+            className={` ${form.activityLevel === "extraActive" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -207,13 +207,13 @@ const Calculator = () => {
         </div>
       </div>
       {/* Step 3 */}
-      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md filter backdrop-blur-xl">
+      <div className="mt-6 rounded-lg bg-white/10 p-6 shadow-md ">
         <h2 className="mb-4 text-2xl font-semibold text-accent">
           Pasul 3: Selectați obiectivul
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3">
           <label
-            className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+            className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -226,7 +226,7 @@ const Calculator = () => {
             Menținere greutate
           </label>
           <label
-            className={` ${form.goal === "weightLoss" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+            className={` ${form.goal === "weightLoss" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -239,7 +239,7 @@ const Calculator = () => {
             Pierdere în greutate
           </label>
           <label
-            className={` ${form.goal === "weightGain" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+            className={` ${form.goal === "weightGain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] hover:cursor-pointer border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out`}
           >
             <input
               type="radio"
@@ -253,19 +253,45 @@ const Calculator = () => {
           </label>
         </div>
       </div>
-      {/* Submit */}
-      <Button onClick={calculateResults} className="mt-6 font-bold active:scale-[0.96] transition-all ease-in-out duration-300">
-        Calculează acum
-      </Button>
-
-      <div className="backdrop-filter-xl mt-6 w-fit rounded-lg bg-white/5 p-6 shadow-md filter">
-        <h2 className="mb-4 text-2xl font-semibold">Rezultatele tale:</h2>
-        <p>Basal Metabolic Rate (BMR): {results.bmr} kcal/zi</p>
-        <p>Target caloric zilnic: {results.calorieIntake} kcal/zi</p>
-        <p>Macronutrienți:</p>
-        <p>Grăsimi: {results.fats} g</p>
-        <p>Proteine: {results.protein} g</p>
-        <p>Carbohidrați: {results.carbs} g</p>
+      <div className="flex flex-col md:flex-row justify-between">
+        {/* Results */}
+        <div className="backdrop--xl mt-6 w-fit rounded-lg bg-white/5 p-6 shadow-md ">
+          <h2 className="mb-4 text-2xl font-semibold">Rezultatele tale:</h2>
+          <p className="mb-2">
+            Basal Metabolic Rate (BMR):{" "}
+            <span className="font-bold text-accent">
+              {" "}
+              {results.bmr} kcal/zi
+            </span>
+          </p>
+          <p>
+            Target caloric zilnic:{" "}
+            <span className="font-bold text-accent">
+              {" "}
+              {results.calorieIntake} kcal/zi
+            </span>
+          </p>
+          <p className="my-2 font-bold">Macronutrienți:</p>
+          <p>
+            Grăsimi:{" "}
+            <span className="font-bold text-accent"> {results.fats} g</span>
+          </p>
+          <p>
+            Proteine:{" "}
+            <span className="font-bold text-accent"> {results.protein} g</span>
+          </p>
+          <p>
+            Carbohidrați:{" "}
+            <span className="font-bold text-accent"> {results.carbs} g</span>
+          </p>
+        </div>
+        {/* Submit */}
+        <Button
+          onClick={calculateResults}
+          className="mt-6 font-bold transition-all duration-300 ease-in-out active:scale-[0.96]"
+        >
+          Calculează acum
+        </Button>
       </div>
     </div>
   );

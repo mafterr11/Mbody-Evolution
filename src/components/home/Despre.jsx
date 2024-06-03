@@ -10,7 +10,7 @@ const Despre = () => {
       {/* Separator */}
       <span className="mb-20 mt-2 block border-b-4 border-accent xl:w-[25rem]" />
       {/* Text */}
-      <div className="flex flex-col-reverse items-start gap-x-14 gap-y-10 md:flex-row">
+      <div className="flex flex-col-reverse items-start gap-x-24 gap-y-10 md:flex-row">
         <div className="flex max-w-3xl flex-col gap-y-8 xl:gap-y-14">
           <p>
             <span className="text-accent">&#9679;</span> Numele meu este Mihaela
