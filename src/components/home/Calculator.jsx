@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 
 const Calculator = () => {
   const [form, setForm] = useState({
@@ -72,7 +73,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="container min-h-screen px-8 py-12 xl:py-32 text-white">
+    <div className="container min-h-screen px-8 py-12 text-white xl:py-32">
       {/* <h1 className="mb-8 text-3xl font-bold text-accent">
         Calculator caloric
       </h1> */}
@@ -96,7 +97,7 @@ const Calculator = () => {
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
             <label className="mb-2 block">Vârstă:</label>
-            <input
+            <Input
               type="number"
               name="age"
               value={form.age}
@@ -107,7 +108,7 @@ const Calculator = () => {
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
             <label className="mb-2 block">Înălțime (cm):</label>
-            <input
+            <Input
               type="number"
               name="height"
               value={form.height}
@@ -118,7 +119,7 @@ const Calculator = () => {
           </div>
           <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
             <label className="mb-2 block">Greutate (kg):</label>
-            <input
+            <Input
               type="number"
               name="weight"
               value={form.weight}
@@ -135,71 +136,74 @@ const Calculator = () => {
           Pasul 2: Nivelul de activitate
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
-            <label className="mb-2 block font-semibold">
-              <input
-                type="radio"
-                name="activityLevel"
-                value="sedentary"
-                checked={form.activityLevel === "sedentary"}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Sedentar
-            </label>
-            <p className="text-[15px]">
+          {/* First */}
+          <label
+            className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+          >
+            <input
+              type="radio"
+              name="activityLevel"
+              value="sedentary"
+              checked={form.activityLevel === "sedentary"}
+              onChange={handleChange}
+              className="mr-2"
+            />
+            Sedentar
+            <p className="mt-2 text-[15px]">
               Petreceți majoritatea zilei stând, cu puțină sau fără exercițiu
               fizic
             </p>
-          </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
-            <label className="mb-2 block font-semibold">
-              <input
-                type="radio"
-                name="activityLevel"
-                value="active"
-                checked={form.activityLevel === "active"}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Activ
-            </label>
-            <p className="text-[15px]">
+          </label>
+          {/* Second */}
+          <label
+            className={` ${form.activityLevel === "active" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+          >
+            <input
+              type="radio"
+              name="activityLevel"
+              value="active"
+              checked={form.activityLevel === "active"}
+              onChange={handleChange}
+              className="mr-2"
+            />
+            Activ
+            <p className="mt-2 text-[15px]">
               Antrenamente ușoare de 3 ori/săptămână
             </p>
-          </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
-            <label className="mb-2 block font-semibold">
-              <input
-                type="radio"
-                name="activityLevel"
-                value="veryActive"
-                checked={form.activityLevel === "veryActive"}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Foarte activ
-            </label>
-            <p className="text-[15px]">
+          </label>
+          {/* Third */}
+          <label
+            className={` ${form.activityLevel === "veryActive" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+          >
+            <input
+              type="radio"
+              name="activityLevel"
+              value="veryActive"
+              checked={form.activityLevel === "veryActive"}
+              onChange={handleChange}
+              className="mr-2"
+            />
+            Foarte activ
+            <p className="mt-2 text-[15px]">
               Antrenamente de atlet de 5-7 ori/săptămână
             </p>
-          </div>
-          <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center filter backdrop-blur-lg">
-            <label className="mb-2 block font-semibold">
-              <input
-                type="radio"
-                name="activityLevel"
-                value="extraActive"
-                checked={form.activityLevel === "extraActive"}
-                onChange={handleChange}
-                className="mr-2"
-              />
-              Extra activ
-            </label>
-            <p className="text-[15px]">
+          </label>
+          <label
+            className={` ${form.activityLevel === "extraActive" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold filter backdrop-blur-lg`}
+          >
+            <input
+              type="radio"
+              name="activityLevel"
+              value="extraActive"
+              checked={form.activityLevel === "extraActive"}
+              onChange={handleChange}
+              className="mr-2"
+            />
+            Extra activ
+            <p className="mt-2 text-[15px]">
               Exerciții fizice foarte intense zilnic sau muncă fizică
             </p>
-          </div>
+          </label>
         </div>
       </div>
       {/* Step 3 */}
@@ -208,7 +212,9 @@ const Calculator = () => {
           Pasul 3: Selectați obiectivul
         </h2>
         <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <label className="block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg">
+          <label
+            className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+          >
             <input
               type="radio"
               name="goal"
@@ -219,7 +225,9 @@ const Calculator = () => {
             />
             Menținere greutate
           </label>
-          <label className="block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg">
+          <label
+            className={` ${form.goal === "weightLoss" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+          >
             <input
               type="radio"
               name="goal"
@@ -230,7 +238,9 @@ const Calculator = () => {
             />
             Pierdere în greutate
           </label>
-          <label className="block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg">
+          <label
+            className={` ${form.goal === "weightGain" && "scale-[0.97] bg-white/5"} transition-all ease-in-out duration-300 block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase filter backdrop-blur-lg`}
+          >
             <input
               type="radio"
               name="goal"
@@ -244,7 +254,7 @@ const Calculator = () => {
         </div>
       </div>
       {/* Submit */}
-      <Button onClick={calculateResults} className="mt-6 font-bold">
+      <Button onClick={calculateResults} className="mt-6 font-bold active:scale-[0.96] transition-all ease-in-out duration-300">
         Calculează acum
       </Button>
 
