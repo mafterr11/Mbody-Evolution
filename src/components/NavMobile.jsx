@@ -38,9 +38,9 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       <aside
         className={`${
           isMenuOpen ? "right-0" : "-right-full"
-        } fixed bottom-0 top-0 z-[99999] h-screen w-full border-l-2 border-accent bg-[#191919] px-8 pb-14 overflow-y-hidden pt-8 transition-all duration-500`}
+        } fixed bottom-0 top-0 z-50 h-screen w-full border-l-2 border-accent bg-[#191919] px-8 transition-all duration-500`}
       >
-        <div className="flex h-full flex-col items-center justify-between text-white">
+        <div className="flex h-full flex-col items-center justify-between text-white py-12">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
