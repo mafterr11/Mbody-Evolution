@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20">
       {/* Image */}
-      <div className="hidden md:absolute bottom-20 right-0 z-30 xl:right-52">
+      <div className="hidden md:block md:absolute bottom-20 right-0 z-30 xl:right-52">
         <Image
           src="/hero2.jpg"
           width={500}
