@@ -7,10 +7,6 @@
     "services": {
       "name": "Servicii",
       "link": "/ro/servicii"
-    },
-    "contact": {
-      "name": "Contact",
-      "link": "/ro/contact"
     }
   },
   "Hero": {

@@ -7,10 +7,6 @@
     "services": {
       "name": "Services",
       "link": "/en/services"
-    },
-    "contact": {
-      "name": "Contact",
-      "link": "/en/contact"
     }
   },
   "Hero": {

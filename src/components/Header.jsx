@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import Logo from "./Logo";
 import LocaleSwitcher from "./ui/LocalSwitcher";
+import NavMobile from "./NavMobile";
 
 const Header = () => {
   return (
@@ -12,6 +13,11 @@ const Header = () => {
           <NavBar containerStyles="hidden xl:flex gap-x-12 mr-20" />
           <LocaleSwitcher />
         </div>
+        <NavMobile
+          containerStyles="xl:hidden"
+          iconStyles="text-accent"
+          linkStyles="uppercase"
+        />
       </div>
     </div>
   );

@@ -1,0 +1,20 @@
+// Link
+import Link from "next/link";
+// Icons
+import { RiInstagramLine } from "react-icons/ri";
+
+const Socials = () => {
+  return (
+    <div className="flex items-center gap-x-5 text-[1.7rem] xs:text-2xl lg:text-3xl xl:text-2xl">
+      <Link
+        href={"https://www.instagram.com/micky_bordeianu"}
+        target="blank"
+        className="flex items-center justify-center gap-x-2 transition-all duration-300 hover:scale-95"
+      >
+       <span className="text-accent text-xl">Insta</span> <RiInstagramLine size={35} />
+      </Link>
+    </div>
+  );
+};
+
+export default Socials;
