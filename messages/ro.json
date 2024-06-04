@@ -82,5 +82,24 @@
       }
     },
     "button": "Calculează acum"
+  },
+  "Specialize": {
+    "title": "Antrenamente personalizate",
+    "subtitle": "Abordare simplă, realizări de excepție",
+    "1": "Gestionarea nutriției",
+    "2": "Dezvoltarea forței",
+    "3": "Remodelare corporală"
+  },
+  "Servicii": {
+    "title": "Serviciile mele",
+    "subtitle": "Transformarea ta poate începe astăzi"
+  },
+  "Cta": {
+    "title": "For more information, feel free to contact me",
+    "title2": "Let's crush those goals together",
+    "button": "Contact Me"
+  },
+  "Footer": {
+    "rights": "Toate drepturile rezervate"
   }
 }

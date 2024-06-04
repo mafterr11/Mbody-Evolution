@@ -137,3 +137,9 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+/* Move reCAPTCHA v3 badge to the left */
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

@@ -9,13 +9,14 @@ const Hero = () => {
   return (
     <div className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20">
       {/* Image */}
-      <div className="absolute bottom-0 right-10 z-30 xl:right-0">
+      <div className="absolute bottom-20 right-20 z-30 xl:right-52">
         <Image
-          src="/hero-micky.png"
-          width={1000}
-          height={1000}
+          src="/hero2.jpg"
+          width={500}
+          height={500}
           alt="Hero Micky"
           quality={100}
+          className=" rounded-tr-[50%] rounded-bl-[50%]"
         />
       </div>
       {/* Hero container */}

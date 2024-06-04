@@ -1,9 +1,14 @@
-import React from 'react'
+import Intro from "@/components/servicii/Intro";
+import Programe from "@/components/servicii/Programe";
+import React from "react";
 
 const Servicii = () => {
   return (
-    <div>Servicii</div>
-  )
-}
+    <>
+      <Intro />
+      <Programe />
+    </>
+  );
+};
 
-export default Servicii
+export default Servicii;

@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-
+import { Toaster } from "@/components/ui/toaster"
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -18,11 +18,12 @@ export default function RootLayout({ children }) {
   const messages = useMessages();
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-black/90  overflow-x-hidden`}>
+      <body className={`${montserrat.className} bg-[#191919]  overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

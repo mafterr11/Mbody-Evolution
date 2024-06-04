@@ -1,9 +1,14 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Logo = () => {
   return (
-    <h3><span className='text-accent font-bold'>MB</span>odyEvolution</h3>
-  )
-}
+    <Link href="/">
+      <h3>
+        <span className="font-bold text-accent">MB</span>odyEvolution
+      </h3>
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;

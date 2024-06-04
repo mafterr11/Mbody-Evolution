@@ -40,7 +40,8 @@ module.exports = {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#C60226",
+          DEFAULT: "#FE00A6",
+          // red C60226
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -54,7 +55,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero': 'url(/hero-gym.webp)',
-        'background': 'url(/background.jpg)',
+        'servicii': 'url(/servicii-gym.webp)',
+        'cta': 'url(/CTA.jpg)',
       },
       borderRadius: {
         lg: "var(--radius)",

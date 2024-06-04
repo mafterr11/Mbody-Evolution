@@ -15,10 +15,6 @@ const NavBar = ({ linkStyles, containerStyles }) => {
       path: t("services.link"),
       name: t("services.name"),
     },
-    {
-      path: t("contact.link"),
-      name: t("contact.name"),
-    },
   ];
   const currentRoute = usePathname();
   return (

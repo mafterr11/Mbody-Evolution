@@ -42,7 +42,6 @@ const Despre = () => {
             width={800}
             height={800}
             alt="about section"
-            className="rounded-br-[50%] rounded-tl-[50%]"
           />
         </div>
       </div>
