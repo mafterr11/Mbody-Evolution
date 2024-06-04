@@ -84,11 +84,29 @@
     "subtitle": "Fitness Made Simple, Results Made Possible",
     "1": "Nutrition Management",
     "2": "Strength Gain",
-    "3": "Body Fat Loss" 
+    "3": "Body Fat Loss"
   },
-  "Servicii":{
+  "Servicii": {
     "title": "My Services",
-    "subtitle": "Start your journey today"
+    "subtitle": "Start your journey today",
+    "online": {
+      "1": "The meal plan, workout plan, and supplements will be tailored specifically for your goals, needs, and particularities. I will also be available with answers, motivation, and adjustments (when necessary) throughout the entire process, so you don't plateau, everything is clear, and we achieve the best results in the shortest time.",
+      "2": "Includes:",
+      "3": "customized meal plan",
+      "4": "personalized workout plan, depending on where you want to train (gym/home), your goals, and availability",
+      "5": "exercises come with video materials, where you will see how to perform them correctly",
+      "6": "you will learn various methods to increase intensity: progressive overload, drop set, rest pause, etc.",
+      "7": "we will communicate on WhatsApp for any questions you may have"
+    },
+    "one-one": {
+      "1": "This is a service for people who want to work directly under my supervision at 18Gym, Pipera.",
+      "2": "Includes:",
+      "3": "personalized workout plan, according to your goals and availability",
+      "4": "customized meal plan",
+      "5": "constant support throughout the collaboration",
+      "6": "posture correction during sessions to ensure maximum efficiency of the workouts",
+      "7": "you will learn various methods to increase intensity: progressive overload, drop set, rest pause, etc."
+    }
   },
   "Cta": {
     "title": "For more information, feel free to contact me",

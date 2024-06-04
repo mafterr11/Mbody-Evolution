@@ -88,12 +88,30 @@
   },
   "Servicii": {
     "title": "Serviciile mele",
-    "subtitle": "Transformarea ta poate începe astăzi"
+    "subtitle": "Transformarea ta poate începe astăzi",
+    "online": {
+      "1": "Planul alimentar, de antrenament și suplimente vor fi concepute special pentru obiectivul, nevoile și particularitățile tale. De asemenea, voi fi prezentă cu răspunsuri, motivație și ajustări (când este cazul) pe perioada întregului proces, astfel încât să nu te plafonezi, totul să fie clar și să obținem cele mai bune rezultate în cel mai scurt timp.",
+      "2": "Ce include: ",
+      "3": "plan alimentar personalizat",
+      "4": "plan de antrenament personalizat, în funcție de locul unde vrei să te antrenezi (sala/acasă), obiectiv și disponibilitate",
+      "5": "exercițiile vin însoțite de materiale video, unde vei vedea cum să le execuți corect",
+      "6": "vei învață diverse metode de creștere a intensității: progresive overload, drop set, rest pause, s.a",
+      "7": "vom comunica pe WhatsApp pentru eventuale întrebări pe care le aveti"
+    },
+    "one-one": {
+      "1": " Acesta este un serviciu pentru persoanele care-și doresc să lucreze direct sub supravegherea mea, la sala 18Gym, Pipera.",
+      "2": "Ce include: ",
+      "3": "plan de antrenament personalizat, în funcție de obiectiv și disponibilitate",
+      "4": "plan alimentar personalizat",
+      "5": "suport permanent pe toată durata colaborării",
+      "6": "corectarea posturii pe parcursul sesiunilor, pentru a asigura o eficienta maxima al antrenamentelor",
+      "7": "vei învață diverse metode de creștere a intensității: progresive overload, drop set, rest pause, s.a"
+    }
   },
   "Cta": {
-    "title": "For more information, feel free to contact me",
-    "title2": "Let's crush those goals together",
-    "button": "Contact Me"
+    "title": "Pentru mai multe informații, nu ezitați să mă contactați",
+    "title2": "Hai să ne atingem obiectivele împreună",
+    "button": "Contactează-mă"
   },
   "Footer": {
     "rights": "Toate drepturile rezervate"

@@ -90,7 +90,7 @@
   width: 0px;
   height: 4px;
   display: block;
-  background: #c60226;
+  background: #FE00A6;
   transition: 300ms;
 }
 
@@ -114,7 +114,7 @@
   width: 0px;
   height: 2px;
   display: block;
-  background: #c60226;
+  background: #FE00A6;
   transition: 300ms;
 }
 
@@ -124,7 +124,7 @@
 
 .active-link {
   text-decoration: underline;
-  text-decoration-color: #c60226;
+  text-decoration-color: #FE00A6;
 }
 
 /* Hide the arrows in number input fields */
