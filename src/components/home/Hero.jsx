@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20">
       {/* Image */}
-      <div className="absolute bottom-20 right-20 z-30 xl:right-52">
+      <div className="hidden md:absolute bottom-20 right-0 z-30 xl:right-52">
         <Image
           src="/hero2.jpg"
           width={500}
@@ -20,7 +20,7 @@ const Hero = () => {
         />
       </div>
       {/* Hero container */}
-      <div className="relative z-30 max-md:text-center xl:p-36">
+      <div className="relative z-30 max-md:text-center xl:p-36 max-md:pt-20">
         <h4 className="font-semibold text-accent">
          {t("subtitle")}
         </h4>
