@@ -7,38 +7,38 @@ export function cn(...inputs) {
 }
 
 
-// export function constructMetadata({
-//   title = "Myriad Tech - Web Development",
-//   description = "Alege Myriad Tech pentru servicii personalizate de web development, transformând viziunea afacerii tale în realitate prin soluții digitale inovatoare.",
-//   keywords = "dezvoltare web, design web personalizat, dezvoltator web freelancer, site-uri responsive, solutii e-commerce, Myriad Tech, design web, freelancer, bucuresti, romania, afacere mica, maftei alexandru, preturi site, super pret",
-//   image = "/logo.png",
-//   icons = "/icon.svg",
-// }: {
-//   title?: string;
-//   description?: string;
-//   keywords?: string;
-//   image?: string;
-//   icons?: string;
-// } = {}): Metadata {
-//   return {
-//     title,
-//     description,
-//     keywords,
-//     openGraph: {
-//       title,
-//       description,
-//       images: [{ url: image }],
-//       type: 'website',
-//     },
-//     twitter: {
-//       card: "summary_large_image",
-//       title,
-//       site:"https://myriad-tech.ro",
-//       description,
-//       images: [image],
-//       creator: "@myriad-tech",
-//     },
-//     icons,
-//     metadataBase: new URL("https://myriad-tech.ro"),
-//   };
-// }
+export function constructMetadata({
+  title = "MBody Evolution - Personal training cu Mihaela Bordeianu",
+  description = "Transformă-ți viața cu MBody Evolution și Mihaela Bordeianu, antrenor personal dedicat, oferind programe personalizate de fitness și nutriție pentru a-ți atinge obiectivele de sănătate și wellness.",
+  keywords = "antrenor personal, Mihaela Bordeianu, fitness, wellness, programe personalizate, antrenamente, nutriție, MBody Evolution, sănătate, București, transformare corporală, lifestyle sănătos, antrenor fitness",
+  image = "/hero2.jpg",
+  icons = "/icon.svg",
+}: {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  icons?: string;
+} = {}): Metadata {
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      images: [{ url: image }],
+      type: 'website',
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      site:"https://mbody.ro",
+      description,
+      images: [image],
+      creator: "@micky_bordeianu",
+    },
+    icons,
+    metadataBase: new URL("https://mbody.vercel.app"),
+  };
+}

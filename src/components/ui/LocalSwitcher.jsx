@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"; // Ensure this is the correct import path
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({styles}) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localeActive = useLocale();
@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
       onValueChange={handleLocaleChange}
       disabled={isPending}
     >
-      <SelectTrigger className="w-[65px] max-xl:hidden">
+      <SelectTrigger className={`${styles} w-[65px]`}>
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>
