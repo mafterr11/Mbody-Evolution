@@ -19,7 +19,7 @@ const Cta = () => {
             </span>
           </h2>
           <div>
-            <Link href="/">
+            <Link href="https://www.instagram.com/micky_bordeianu">
               <Button className="group gap-x-2">
               {t("button")}{" "}
                 <Send
