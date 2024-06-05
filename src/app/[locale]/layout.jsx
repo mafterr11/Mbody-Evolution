@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Toaster } from "@/components/ui/toaster";
 import { constructMetadata } from "@/lib/utils";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],

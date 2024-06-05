@@ -9,7 +9,7 @@ const Programe = () => {
         <h2 className="mb-2 max-md:text-center">ONLINE COACHING</h2>
         {/* Separator */}
         <span className="mb-20 mt-2 block border-b-4 border-accent max-md:mx-auto max-md:w-[90%] xl:w-[26rem]" />
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 max-md:text-center">
           <p>{t("online.1")}</p>
 
           <p>{t("online.2")} </p>
@@ -36,7 +36,7 @@ const Programe = () => {
         <h2 className="mb-2 max-md:text-center">1-1 COACHING</h2>
         {/* Separator */}
         <span className="mb-20 mt-2 block border-b-4 border-accent max-md:mx-auto max-md:w-[80%] xl:w-[19rem]" />
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 max-md:text-center">
           <p>{t("one-one.1")}</p>
           <p>{t("one-one.2")} </p>
           <ul className="flex flex-col gap-y-4">

@@ -138,8 +138,12 @@ input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
-/* Move reCAPTCHA v3 badge to the left */
 
-.grecaptcha-badge {
-  visibility: hidden;
+.glass-container {
+  position: relative;
+}
+
+.glass-container::before {
+  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+  content: "";
 }

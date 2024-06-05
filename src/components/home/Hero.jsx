@@ -1,40 +1,80 @@
+"use client";
 import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
+gsap.registerPlugin(useGSAP);
 const Hero = () => {
   const t = useTranslations("Hero");
+  const container = useRef(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+      tl.fromTo(
+        ".hero__heading",
+        { scale: 0.5, translateY: -200, translateX: 50 },
+        { scale: 1, opacity: 1, duration: 1.2, translateY: 0, translateX: 0 },
+      );
+      tl.fromTo(
+        ".hero__subtitle",
+        { scale: 0.5, x: -200 },
+        { scale: 1, x: 0, opacity: 1, duration: 1 },
+        "-=0.6",
+      );
+      tl.fromTo(
+        ".hero__button",
+        { scale: 0.5, translateY: -200, translateY: -100 },
+        { scale: 1, opacity: 1, duration: 1.2, translateY: 0, translateX: 0 },
+        "-=0.8",
+      );
+      tl.fromTo(
+        ".hero__image",
+        { y: 100, rotate: 45 },
+        { y: 0, opacity: 1, duration: 1.1, rotate: 0 },
+        "-=1",
+      );
+    },
+    { scope: container },
+  );
+
   return (
-    <div className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20">
+    <div
+      ref={container}
+      className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20"
+    >
+      {/* Black overlay */}
+      <div className="absolute inset-0 bg-black/65" />
       {/* Image */}
-      <div className="hidden md:block md:absolute bottom-20 right-0 z-30 xl:right-52">
+      <div className="bottom-20 right-0 z-30 hidden md:absolute md:block xl:right-52">
         <Image
           src="/hero2.jpg"
           width={500}
           height={500}
           alt="Hero Micky"
           quality={100}
-          className=" rounded-tr-[50%] rounded-bl-[50%]"
+          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0"
         />
       </div>
       {/* Hero container */}
-      <div className="relative z-30 max-md:text-center xl:p-36 max-md:pt-20">
-        <h4 className="font-semibold text-accent">
-         {t("subtitle")}
+      <div className="relative z-30 max-md:pt-20 max-md:text-center xl:p-36">
+        <h4 className="hero__subtitle font-semibold text-accent opacity-0">
+          {t("subtitle")}
         </h4>
-        <h1 className="mb-6 px-2 xl:max-w-4xl">
-        {t("title")}
+        <h1 className="hero__heading mb-6 px-2 opacity-0 xl:max-w-4xl">
+          {t("title")}
         </h1>
-        <Link href={t("contact-link")}> 
-        <Button>
-          <span>{t("contact-button")}</span>
-        </Button>
+        <Link href={t("contact-link")}>
+          <Button className="hero__button opacity-0">
+            <span>{t("contact-button")}</span>
+          </Button>
         </Link>
       </div>
-      {/* Black overlay */}
-      <div className="absolute inset-0 bg-black/65" />
     </div>
   );
 };
