@@ -39,9 +39,9 @@ const Despre = () => {
           ease: "power2.inOut",
           y: 0,
           opacity: 1,
-          duration: 2,
+          duration: 1.4,
           scrollTrigger: {
-            trigger: ".despre__heading",
+            trigger: ".despre__image",
             start: "top bottom-=20%",
             toggleActions: "play none none none",
           },
@@ -61,7 +61,7 @@ const Despre = () => {
         <span className="mb-20 mt-2 block border-b-4 border-accent xl:w-[25rem]" />
       </div>
       {/* Text */}
-      <div className="flex flex-col-reverse items-start gap-x-24 gap-y-10 md:flex-row">
+      <div className="flex flex-col items-start gap-x-24 gap-y-10 md:flex-row">
         <div className="flex max-w-3xl flex-col gap-y-8 xl:gap-y-14">
           <p className="despre__heading opacity-0">
             <span className="text-accent">&#9679;</span> {t("p1")}

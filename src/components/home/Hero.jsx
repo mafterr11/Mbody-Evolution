@@ -46,21 +46,11 @@ const Hero = () => {
   return (
     <div
       ref={container}
-      className="relative flex h-screen w-screen items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-md:pb-20"
+      className="relative flex flex-col md:flex-row h-screen w-screen items-center max-md:justify-center justify-start bg-hero bg-cover bg-center bg-no-repeat"
     >
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/65" />
-      {/* Image */}
-      <div className="bottom-20 right-0 z-30 hidden md:absolute md:block xl:right-52">
-        <Image
-          src="/hero2.jpg"
-          width={500}
-          height={500}
-          alt="Hero Micky"
-          quality={100}
-          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0"
-        />
-      </div>
+
       {/* Hero container */}
       <div className="relative z-30 max-md:pt-20 max-md:text-center xl:p-36">
         <h4 className="hero__subtitle font-semibold text-accent opacity-0">
@@ -74,6 +64,17 @@ const Hero = () => {
             <span>{t("contact-button")}</span>
           </Button>
         </Link>
+      </div>
+      {/* Image */}
+      <div className="z-30 md:pt-24 hidden md:block">
+        <Image
+          src="/hero2.jpg"
+          width={500}
+          height={500}
+          alt="Hero Micky"
+          quality={100}
+          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0"
+        />
       </div>
     </div>
   );

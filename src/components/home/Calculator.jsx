@@ -95,7 +95,7 @@ const Calculator = () => {
         {
           scrollTrigger: {
             trigger: ".calculator__glow",
-            start: "top bottom-=50%",
+            start: "top bottom-=40%",
             toggleActions: "play pause resume reverse",
           },
           scale: 1,
