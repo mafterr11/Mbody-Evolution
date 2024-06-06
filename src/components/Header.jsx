@@ -11,7 +11,7 @@ const Header = () => {
         <Logo />
         <div className="flex items-center justify-center">
           <NavBar containerStyles="hidden xl:flex gap-x-12 mr-20" />
-          <LocaleSwitcher styles="max-md:hidden" />
+          <LocaleSwitcher styles="max-xl:hidden" />
         </div>
         <NavMobile
           containerStyles="xl:hidden"

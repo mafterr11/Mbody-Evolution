@@ -46,17 +46,17 @@ const Hero = () => {
   return (
     <div
       ref={container}
-      className="relative flex flex-col md:flex-row h-screen w-screen items-center max-md:justify-center justify-start bg-hero bg-cover bg-center bg-no-repeat"
+      className="relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-xl:justify-center xl:flex-row"
     >
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/65" />
 
       {/* Hero container */}
-      <div className="relative z-30 max-md:pt-20 max-md:text-center xl:p-36">
+      <div className="relative z-30 max-xl:text-center max-xl:pt-20 xl:p-36">
         <h4 className="hero__subtitle font-semibold text-accent opacity-0">
           {t("subtitle")}
         </h4>
-        <h1 className="hero__heading mb-6 px-2 opacity-0 xl:max-w-4xl">
+        <h1 className="hero__heading mb-6 px-2 opacity-0 md:max-xl:px-7 xl:max-w-4xl">
           {t("title")}
         </h1>
         <Link href={t("contact-link")}>
@@ -66,14 +66,14 @@ const Hero = () => {
         </Link>
       </div>
       {/* Image */}
-      <div className="z-30 md:pt-24 hidden md:block">
+      <div className="z-30 hidden md:flex md:pt-24">
         <Image
           src="/hero2.jpg"
           width={500}
           height={500}
           alt="Hero Micky"
           quality={100}
-          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0"
+          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:max-xl:h-[450px] md:max-xl:w-[400px]"
         />
       </div>
     </div>

@@ -49,10 +49,10 @@
   }
 
   h1 {
-    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[60px] xl:leading-[85px] 2xl:text-[65px];
+    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[55px] xl:leading-[85px] 2xl:text-[65px];
   }
   h2 {
-    @apply text-[25px] font-medium md:text-[32px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];
+    @apply text-[25px] font-medium md:text-[27px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];
   }
   h3 {
     @apply text-[22px] font-medium leading-[47px] md:text-[26px] lg:text-[28px] 2xl:text-[30px];

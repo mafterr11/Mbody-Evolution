@@ -37,7 +37,7 @@ const Specialize = () => {
     <div ref={container} className="mb-56 mt-12 p-8 text-center">
       <h1 className="mb-4 text-4xl font-bold uppercase">{t("title")}</h1>
       <p className="mb-24 uppercase text-accent">{t("subtitle")}</p>
-      <div className="container flex items-center justify-evenly max-md:flex-col max-md:space-y-8">
+      <div className="container flex items-center justify-evenly max-xl:flex-col max-md:space-y-8">
         {/* First */}
         <div className="flex flex-col items-center">
           <div className="circle__rotate relative mb-2 rounded-full border-[0.8rem] border-gray-200 p-5 circle__animate">

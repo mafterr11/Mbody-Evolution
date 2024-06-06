@@ -8,8 +8,8 @@ const Servicii = () => {
     <>
       <Intro />
       <div className="relative">
-        <Particles className="absolute inset-0" />
         <Programe />
+        <Particles className="absolute inset-0 -z-10" />
       </div>
     </>
   );

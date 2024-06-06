@@ -4,7 +4,7 @@ import React from "react";
 const Programe = () => {
   const t = useTranslations("Servicii");
   return (
-    <div className="container pb-40 grid gap-x-40 max-md:gap-y-20 md:grid-cols-2 pt-12 xl:pt-24">
+    <div className="container grid gap-x-40 pb-40 pt-12 max-md:gap-y-20 md:max-w-[90%] md:grid-cols-2 md:max-xl:gap-x-12 xl:pt-24">
       <div>
         <h2 className="mb-2 max-md:text-center">ONLINE COACHING</h2>
         {/* Separator */}
