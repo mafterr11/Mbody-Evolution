@@ -4,7 +4,7 @@ import React from "react";
 const Programe = () => {
   const t = useTranslations("Servicii");
   return (
-    <div className="container mb-40 grid gap-x-40 max-md:gap-y-20 md:grid-cols-2">
+    <div className="container pb-40 grid gap-x-40 max-md:gap-y-20 md:grid-cols-2 pt-12 xl:pt-24">
       <div>
         <h2 className="mb-2 max-md:text-center">ONLINE COACHING</h2>
         {/* Separator */}
@@ -13,7 +13,7 @@ const Programe = () => {
           <p>{t("online.1")}</p>
 
           <p>{t("online.2")} </p>
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-4 md:gap-y-8">
             <li>
               <span className="text-accent">&#9679;</span> {t("online.3")}
             </li>
@@ -39,7 +39,7 @@ const Programe = () => {
         <div className="flex flex-col gap-y-4 max-md:text-center">
           <p>{t("one-one.1")}</p>
           <p>{t("one-one.2")} </p>
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-4 md:gap-y-8">
             <li>
               <span className="text-accent">&#9679;</span> {t("one-one.3")}{" "}
             </li>

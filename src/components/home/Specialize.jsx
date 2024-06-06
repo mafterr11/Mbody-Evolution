@@ -24,7 +24,7 @@ const Specialize = () => {
           duration: 1,
           scrollTrigger: {
             trigger: ".circle__rotate",
-            start: "top bottom-=40%",
+            start: "top bottom-=60%",
             toggleActions: "play pause resume reverse",
           },
         },
