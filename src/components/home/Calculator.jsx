@@ -95,7 +95,7 @@ const Calculator = () => {
         {
           scrollTrigger: {
             trigger: ".calculator__glow",
-            start: "top bottom-=40%",
+            start: "top bottom-=25%",
             toggleActions: "play pause resume reverse",
           },
           scale: 1,
@@ -131,7 +131,7 @@ const Calculator = () => {
   return (
     <div
       ref={container}
-      className="container relative my-12 min-h-screen px-8 text-white xl:my-32"
+      className="container relative my-12 min-h-screen px-8 text-white md:max-xl:max-w-[90%] xl:my-32"
     >
       {/* <h1 className="mb-8 text-3xl font-bold text-accent">
         Calculator caloric
@@ -144,7 +144,7 @@ const Calculator = () => {
           <h2 className="mb-4 text-2xl font-semibold text-accent">
             {t("p1.title")}
           </h2>
-          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
+          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
             <div className="rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center">
               <label className="mb-2 block">Sex:</label>
               <select
@@ -197,7 +197,7 @@ const Calculator = () => {
           <h2 className="mb-4 text-2xl font-semibold text-accent">
             {t("p2.title")}
           </h2>
-          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-4">
+          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
             {/* First */}
             <label
               className={` ${form.activityLevel === "sedentary" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-6 py-8 text-center font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer`}
@@ -264,7 +264,7 @@ const Calculator = () => {
           <h2 className="mb-4 text-2xl font-semibold text-accent">
             {t("p3.title")}
           </h2>
-          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
             <label
               className={` ${form.goal === "maintain" && "scale-[0.97] bg-white/5"} block rounded-md border-[1px] border-white/20 bg-black/10 px-4 py-6 text-center font-medium uppercase transition-all duration-300 ease-in-out hover:cursor-pointer`}
             >

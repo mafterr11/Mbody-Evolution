@@ -52,7 +52,7 @@ const Despre = () => {
   );
 
   return (
-    <div ref={container} className="container py-[8rem]">
+    <div ref={container} className="container py-[8rem] md:max-xl:max-w-[90%]">
       <div className="despre__heading opacity-0">
         <h2 className="flex items-center justify-center gap-x-3 md:justify-start">
           {t("title")} <Dumbbell size={45} className="text-accent" />{" "}
@@ -61,7 +61,7 @@ const Despre = () => {
         <span className="mb-20 mt-2 block border-b-4 border-accent xl:w-[25rem]" />
       </div>
       {/* Text */}
-      <div className="flex flex-col items-start gap-x-24 gap-y-10 md:flex-row">
+      <div className="flex flex-col items-start gap-x-24 gap-y-10 xl:flex-row">
         <div className="flex max-w-3xl flex-col gap-y-8 xl:gap-y-14">
           <p className="despre__heading opacity-0">
             <span className="text-accent">&#9679;</span> {t("p1")}

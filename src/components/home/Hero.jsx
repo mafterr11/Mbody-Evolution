@@ -73,7 +73,7 @@ const Hero = () => {
           height={500}
           alt="Hero Micky"
           quality={100}
-          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:max-xl:h-[450px] md:max-xl:w-[400px]"
+          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:h-[450px] md:w-[400px] lg:max-xl:h-[550px] lg:max-xl:w-[500px]"
         />
       </div>
     </div>

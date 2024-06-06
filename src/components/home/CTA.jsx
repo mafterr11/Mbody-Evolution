@@ -10,9 +10,9 @@ const Cta = () => {
   return (
     <section className="bg-cta relative mb-44 bg-fixed bg-[bottom_-22rem_center] py-24">
       <div className="absolute inset-0 bg-black/50" />
-      <div className="container relative mx-auto">
+      <div className="container md:max-xl:max-w-[90%] relative mx-auto">
         <div className="flex flex-col items-center">
-          <h2 className="mb-6 flex max-w-5xl flex-col items-center justify-center gap-y-2 text-center">
+          <h2 className="mb-6 flex xl:max-w-5xl flex-col items-center justify-center gap-y-2 text-center">
             {t("title")}
             <span className="text-3xl font-medium md:max-xl:text-4xl">
               {t("title2")}
