@@ -88,7 +88,12 @@
   },
   "Servicii": {
     "title": "My Services",
-    "subtitle": "Start your journey today",
+    "subtitle": {
+      "1": "Your transformation can start today!",
+      "2": "Don't miss the chance for a change",
+      "3": "Contact me now",
+      "4": "Change starts from within"
+    },
     "online": {
       "1": "The meal plan, workout plan, and supplements will be tailored specifically for your goals, needs, and particularities. I will also be available with answers, motivation, and adjustments (when necessary) throughout the entire process, so you don't plateau, everything is clear, and we achieve the best results in the shortest time.",
       "2": "Includes:",

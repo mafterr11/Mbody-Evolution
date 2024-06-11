@@ -88,7 +88,12 @@
   },
   "Servicii": {
     "title": "Serviciile mele",
-    "subtitle": "Transformarea ta poate începe astăzi",
+    "subtitle": {
+      "1": "Transformarea ta poate începe astăzi!",
+      "2": "Nu rata șansa la o schimbare",
+      "3": "Contactează-mă acum",
+      "4": "Schimbarea pornește din interior"
+    },
     "online": {
       "1": "Planul alimentar, de antrenament și suplimente vor fi concepute special pentru obiectivul, nevoile și particularitățile tale. De asemenea, voi fi prezentă cu răspunsuri, motivație și ajustări (când este cazul) pe perioada întregului proces, astfel încât să nu te plafonezi, totul să fie clar și să obținem cele mai bune rezultate în cel mai scurt timp.",
       "2": "Ce include: ",
