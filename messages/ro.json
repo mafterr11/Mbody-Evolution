@@ -88,13 +88,7 @@
   },
   "Servicii": {
     "title": "Serviciile mele",
-    "subtitle": {
-      "subtitle": "Schimbarea pe care o aștepți",
-      "1": "este la un pas distanță!",
-      "2": "este pe cale să înceapă!",
-      "3": "devine realitate!",
-      "4": "este inevitabilă!"
-    },
+    "subtitle": "Schimbarea pe care o aștepți este pe cale să înceapă!",
     "online": {
       "1": "Planul alimentar, de antrenament și suplimente vor fi concepute special pentru obiectivul, nevoile și particularitățile tale. De asemenea, voi fi prezentă cu răspunsuri, motivație și ajustări (când este cazul) pe perioada întregului proces, astfel încât să nu te plafonezi, totul să fie clar și să obținem cele mai bune rezultate în cel mai scurt timp.",
       "2": "Ce include: ",

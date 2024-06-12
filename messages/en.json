@@ -88,13 +88,7 @@
   },
   "Servicii": {
     "title": "My Services",
-    "subtitle": {
-      "subtitle": "The change you are waiting for",
-      "1": "is just a step away!",
-      "2": "is about to begin!",
-      "3": "is becoming a reality!",
-      "4": "is inevitable!"
-    },
+    "subtitle": "The change you are waiting for is possible!",
     "online": {
       "1": "The meal plan, workout plan, and supplements will be tailored specifically for your goals, needs, and particularities. I will also be available with answers, motivation, and adjustments (when necessary) throughout the entire process, so you don't plateau, everything is clear, and we achieve the best results in the shortest time.",
       "2": "Includes:",
