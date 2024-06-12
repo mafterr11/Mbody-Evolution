@@ -18,7 +18,7 @@ const Intro = () => {
           <h2 className="font-medium">{t("title")}</h2>
           <div className="h-16 flex items-center justify-center"> {/* Set a fixed height for the h3 container */}
             <h3 className="font-bold text-accent max-md:leading-8">
-              <FlipWords words={words} />
+            {t("subtitle.subtitle")} <FlipWords words={words} />
             </h3>
           </div>
         </div>

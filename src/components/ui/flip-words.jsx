@@ -1,18 +1,15 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
+import { cn } from "@/utils/cn";
 
-export const FlipWords = ({
-  words,
-  duration = 3000,
-  className,
-}) => {
+export const FlipWords = ({ words, duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating, setIsAnimating] = useState < boolean > false;
 
+  // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {
-    const word = words[(words.indexOf(currentWord) + 1) % words.length];
+    const word = words[words.indexOf(currentWord) + 1] || words[0];
     setCurrentWord(word);
     setIsAnimating(true);
   }, [currentWord, words]);
@@ -40,7 +37,7 @@ export const FlipWords = ({
           y: 0,
         }}
         transition={{
-          duration: 1,
+          duration: 0.4,
           ease: "easeInOut",
           type: "spring",
           stiffness: 100,
@@ -48,34 +45,31 @@ export const FlipWords = ({
         }}
         exit={{
           opacity: 0,
-          y: 40,
-          x: -40,
+          y: -40,
+          x: 40,
           filter: "blur(8px)",
+          scale: 2,
           position: "absolute",
         }}
         className={cn(
-          "z-10 flex flex-wrap justify-center text-accent dark:text-neutral-100 px-6", // Added justify-center for centering
-          className
+          "relative z-10 inline-block px-2 text-left text-neutral-900 dark:text-neutral-100",
+          className,
         )}
         key={currentWord}
       >
-        {currentWord.split(" ").map((word, wordIndex) => (
-          <span key={`${currentWord}-${wordIndex}`} className="flex mr-2">
-            {word.split("").map((letter, index) => (
-              <motion.span
-                key={`${currentWord}-${wordIndex}-${index}`}
-                initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                transition={{
-                  delay: index * 0.05,
-                  duration: 0.7,
-                }}
-                className="flex"
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </span>
+        {currentWord.split("").map((letter, index) => (
+          <motion.span
+            key={currentWord + index}
+            initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{
+              delay: index * 0.08,
+              duration: 0.4,
+            }}
+            className="inline-block"
+          >
+            {letter}
+          </motion.span>
         ))}
       </motion.div>
     </AnimatePresence>
