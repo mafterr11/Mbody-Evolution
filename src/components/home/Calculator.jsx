@@ -49,9 +49,9 @@ const Calculator = () => {
     // Activity Multipliers
     const activityMultipliers = {
       sedentary: 1.2,
-      active: 1.375,
-      veryActive: 1.55,
-      extraActive: 1.725,
+      active: 1.55,
+      veryActive: 1.725,
+      extraActive: 1.9,
     };
 
     const activityMultiplier = activityMultipliers[activityLevel];
@@ -59,23 +59,51 @@ const Calculator = () => {
 
     // Adjust Calorie Intake for Goal
     if (goal === "weightLoss") {
-      calorieIntake -= 500;
+      calorieIntake -= 570;
+
+      // Macronutrient Distribution for weight loss (20% Fats, 35% Protein, 45% Carbs)
+      const fats = (0.21 * calorieIntake) / 9;
+      const protein = (0.356 * calorieIntake) / 4;
+      const carbs = (0.46 * calorieIntake) / 4;
+
+      setResults({
+        bmr: bmr.toFixed(2),
+        calorieIntake: calorieIntake.toFixed(2),
+        fats: fats.toFixed(2),
+        protein: protein.toFixed(2),
+        carbs: carbs.toFixed(2),
+      });
     } else if (goal === "weightGain") {
-      calorieIntake += 500;
+      calorieIntake += 600;
+
+      // Macronutrient Distribution for weight gain (25% Fats, 20% Protein, 55% Carbs)
+      const fats = (0.25 * calorieIntake) / 9;
+      const protein = (0.2 * calorieIntake) / 4;
+      const carbs = (0.55 * calorieIntake) / 4;
+
+      setResults({
+        bmr: bmr.toFixed(2),
+        calorieIntake: calorieIntake.toFixed(2),
+        fats: fats.toFixed(2),
+        protein: protein.toFixed(2),
+        carbs: carbs.toFixed(2),
+      });
+    } else {
+      // Maintain weight
+
+      // Macronutrient Distribution for maintaining weight (20% Fats, 30% Protein, 50% Carbs)
+      const fats = (0.2 * calorieIntake) / 9;
+      const protein = (0.255 * calorieIntake) / 4;
+      const carbs = (0.55 * calorieIntake) / 4;
+
+      setResults({
+        bmr: bmr.toFixed(2),
+        calorieIntake: calorieIntake.toFixed(2),
+        fats: fats.toFixed(2),
+        protein: protein.toFixed(2),
+        carbs: carbs.toFixed(2),
+      });
     }
-
-    // Macronutrient Distribution (20% Fats, 35% Protein, 45% Carbs)
-    const fats = (0.2 * calorieIntake) / 9;
-    const protein = (0.35 * calorieIntake) / 4;
-    const carbs = (0.45 * calorieIntake) / 4;
-
-    setResults({
-      bmr: bmr.toFixed(2),
-      calorieIntake: calorieIntake.toFixed(2),
-      fats: fats.toFixed(2),
-      protein: protein.toFixed(2),
-      carbs: carbs.toFixed(2),
-    });
   };
 
   const container = useRef(null);
