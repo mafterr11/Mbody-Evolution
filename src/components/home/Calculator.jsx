@@ -302,6 +302,7 @@ const Calculator = () => {
                 value="maintain"
                 checked={form.goal === "maintain"}
                 onChange={handleChange}
+                onClick={calculateResults}
                 className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
               />
               {t("p3.1")}
@@ -315,6 +316,7 @@ const Calculator = () => {
                 value="weightLoss"
                 checked={form.goal === "weightLoss"}
                 onChange={handleChange}
+                onClick={calculateResults}
                 className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
               />
               {t("p3.2")}
@@ -328,6 +330,7 @@ const Calculator = () => {
                 value="weightGain"
                 checked={form.goal === "weightGain"}
                 onChange={handleChange}
+                onClick={calculateResults}
                 className="mr-2 h-3 w-3 border-spacing-2 appearance-none rounded-full border-2 border-gray-300 ring-accent ring-offset-1 checked:border-accent checked:bg-accent checked:ring-[1px]"
               />
               {t("p3.3")}
