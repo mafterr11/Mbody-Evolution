@@ -17,18 +17,18 @@
   },
   "Despre": {
     "title": "ABOUT ME",
-    "p1": "My name is Mihaela Bordeianu, I am a personal trainer, nutrition technician, and professional athlete.",
-    "p2": "Since childhood, I have been attracted to sports and competition, investing a lot of passion in every sports activity I engaged in, but I also faced many of the common difficulties for a beginner, such as lack of self-confidence and dissatisfaction with my own physical shape. With such a mindset and without solid knowledge, progress was slow to appear.",
-    "p3": {
-      "1": "As I delved deeper into this field,",
-      "2": "I realized that nutrition plays an essential role",
-      "3": " and I continued to specialize in this direction. I believe that no one can follow a strict diet indefinitely, which is why I teach those I work with to be flexible, to integrate less healthy foods into their diet, and at the same time, to achieve and maintain their long-term goals."
-    },
-    "p4": {
-      "1": "This is a",
-      "2": "lifestyle",
-      "3": ", not a short-term compromise, which is why it is essential to find the optimal approach, both in diet and training, for your goals and lifestyle."
-    }
+   "p1": "My name is Mihaela Bordeianu, your new fitness coach.",
+"p2": "After trying out different sports, I settled on fitness and bodybuilding. The more I got into it, I realized that through my passion, I could help others by guiding them toward their goals.",
+"p3": {
+"1": "Over time, ",
+"2": "I realized the value of balanced nutrition",
+"3": " and decided to specialize in this area. A different approach, where you can occasionally include less healthy foods, can help you maintain your fitness goals in the long term."
+},
+"p4": {
+"1": "You must remember that this whole process",
+"2": "is a way of life",
+"3": " , which is why each of you must find the best approach in terms of nutrition and training to suit your lifestyle."
+}
   },
   "Calculator": {
     "p1": {

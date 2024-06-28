@@ -62,7 +62,7 @@ const Despre = () => {
       </div>
       {/* Text */}
       <div className="flex flex-col items-start gap-x-24 gap-y-10 xl:flex-row">
-        <div className="flex max-w-3xl xl:max-2xl:max-w-xl flex-col gap-y-8 xl:gap-y-14">
+        <div className="flex max-w-3xl flex-col gap-y-8 xl:gap-y-14 xl:max-2xl:max-w-xl">
           <p className="despre__heading opacity-0">
             <span className="text-accent">&#9679;</span> {t("p1")}
           </p>
