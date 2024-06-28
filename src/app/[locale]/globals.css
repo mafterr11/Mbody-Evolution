@@ -49,7 +49,7 @@
   }
 
   h1 {
-    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[48px] xl:leading-[85px] 2xl:text-[65px];
+    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[40px] xl:leading-[85px] 2xl:text-[65px];
   }
   h2 {
     @apply text-[25px] font-medium md:text-[27px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];

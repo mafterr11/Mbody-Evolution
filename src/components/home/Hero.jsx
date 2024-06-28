@@ -66,7 +66,7 @@ const Hero = () => {
         </Link>
       </div>
       {/* Image */}
-      <div className="z-30 hidden md:flex md:pt-24">
+      <div className="z-30 hidden xl:max-2xl:hidden md:flex md:pt-24">
         <Image
           src="/hero2.jpg"
           width={500}
