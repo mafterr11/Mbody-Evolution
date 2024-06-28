@@ -56,7 +56,7 @@ const Hero = () => {
         <h4 className="hero__subtitle font-semibold text-accent opacity-0">
           {t("subtitle")}
         </h4>
-        <h1 className="hero__heading mb-6 px-2 opacity-0 md:max-xl:px-7 xl:max-w-4xl">
+        <h1 className="hero__heading mb-6 px-2 opacity-0 md:max-xl:px-7 2xl:max-w-4xl">
           {t("title")}
         </h1>
         <Link href={t("contact-link")}>
