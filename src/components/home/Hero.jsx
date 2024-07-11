@@ -46,35 +46,36 @@ const Hero = () => {
   return (
     <div
       ref={container}
-      className="relative flex h-screen w-screen flex-col items-center justify-start bg-hero bg-cover bg-center bg-no-repeat max-xl:justify-center xl:flex-row"
+      className="relative h-screen w-screen bg-hero bg-cover bg-center bg-no-repeat"
     >
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/65" />
-
-      {/* Hero container */}
-      <div className="relative z-30 max-xl:text-center max-xl:pt-20 xl:p-36">
-        <h4 className="hero__subtitle font-semibold text-accent opacity-0">
-          {t("subtitle")}
-        </h4>
-        <h1 className="hero__heading mb-6 px-2 opacity-0 md:max-xl:px-7 2xl:max-w-4xl">
-          {t("title")}
-        </h1>
-        <Link href={t("contact-link")}>
-          <Button className="hero__button opacity-0">
-            <span>{t("contact-button")}</span>
-          </Button>
-        </Link>
-      </div>
-      {/* Image */}
-      <div className="z-30 hidden xl:max-2xl:hidden md:flex md:pt-24">
-        <Image
-          src="/hero2.jpg"
-          width={500}
-          height={500}
-          alt="Hero Micky"
-          quality={100}
-          className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:h-[450px] md:w-[400px] lg:h-[550px] lg:w-[500px]"
-        />
+      <div className="flex flex-col items-center justify-center xl:flex-row h-full px-10">
+        {/* Hero container */}
+        <div className="relative z-30 max-xl:pt-20 max-xl:text-center">
+          <h4 className="hero__subtitle font-semibold text-accent opacity-0">
+            {t("subtitle")}
+          </h4>
+          <h1 className="hero__heading mb-6 px-2 opacity-0 md:max-xl:px-7 xl:max-w-4xl">
+            {t("title")}
+          </h1>
+          <Link href={t("contact-link")}>
+            <Button className="hero__button opacity-0">
+              <span>{t("contact-button")}</span>
+            </Button>
+          </Link>
+        </div>
+        {/* Image */}
+        <div className="z-30 hidden md:flex md:pt-24 shrink-0">
+          <Image
+            src="/hero2.jpg"
+            width={500}
+            height={500}
+            alt="Hero Micky"
+            quality={100}
+            className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:h-[450px] md:w-[400px] lg:h-[550px] lg:w-[500px]"
+          />
+        </div>
       </div>
     </div>
   );
