@@ -50,7 +50,7 @@ const Hero = () => {
     >
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/65" />
-      <div className="flex flex-col items-center justify-center xl:flex-row h-full px-10">
+      <div className="flex flex-col items-center justify-center xl:justify-evenly xl:flex-row h-full xl:px-20 2xl:px-0">
         {/* Hero container */}
         <div className="relative z-30 max-xl:pt-20 max-xl:text-center">
           <h4 className="hero__subtitle font-semibold text-accent opacity-0">
@@ -73,7 +73,7 @@ const Hero = () => {
             height={500}
             alt="Hero Micky"
             quality={100}
-            className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:h-[450px] md:w-[400px] lg:h-[550px] lg:w-[500px]"
+            className="hero__image rounded-bl-[50%] rounded-tr-[50%] opacity-0 md:h-[450px] md:w-[400px] lg:h-[550px] lg:w-[500px] xl:max-2xl:w-[450px] xl:max-2xl:h-[500px] "
           />
         </div>
       </div>
