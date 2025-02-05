@@ -179,7 +179,7 @@ const Calculator = () => {
                 name="sex"
                 value={form.sex}
                 onChange={handleChange}
-                className="h-[3rem] w-[10rem] rounded p-2 text-black placeholder:text-black"
+                className="h-[3rem] w-[10rem] rounded p-2 text-black placeholder:text-black bg-white"
               >
                 <option value="female">{t("p1.sex.female")}</option>
                 <option value="male">{t("p1.sex.male")}</option>

@@ -1,6 +1,96 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin 'tailwindcss-animate';
+
+@theme {
+  /* Colors */
+  --color-accent: #FE00A6;
+  --color-body: #fbfdff;
+  --color-body-light: #EAE9E7;
+  --color-white: #fff;
+  --color-black: #0d0c0b;
+  --color-black-heavy: #000000;
+  --color-grey-light: #ECECEC;
+  --color-red: #ED2939;
+
+  /* Breakpoints */
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1500px;
+
+  /* Container Padding */
+  --container-padding: 15px;
+
+  /* Font Families */
+  --font-roboto: var(--font-roboto), sans-serif;
+  --font-recursive: var(--font-recursive), sans-serif;
+
+  /* Border Radius */
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+}
+ 
+
+@layer utilities {
+  .bg-hero {
+    background-image: url('/hero-gym.webp');
+  }
+  .bg-servicii {
+    background-image: url('/servicii-gym.webp');
+  }
+  .bg-cta {
+    background-image: url('/CTA.jpg');
+  }
+  .container {
+    padding-inline: 15px;
+    margin-inline: auto;
+  }
+
+  /* Box Shadows */
+  .shadow-button {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Heights */
+  .h-screen-vh {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  /* Animations */
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+  }
+}
 
 @layer base {
   :root {
@@ -31,9 +121,7 @@
 
     --radius: 0.5rem;
   }
-}
-
-@layer base {
+  
   * {
     @apply box-border;
   }
@@ -49,7 +137,7 @@
   }
 
   h1 {
-    @apply text-[26px]  font-bold md:text-[32px] lg:text-[37px] xl:text-[45px] xl:leading-[85px] 2xl:text-[65px];
+    @apply text-[26px] font-bold md:text-[32px] lg:text-[37px] xl:text-[45px] xl:leading-[85px] 2xl:text-[65px];
   }
   h2 {
     @apply text-[25px] font-medium md:text-[27px] lg:text-[34px] xl:text-[38px] 2xl:text-[40px];

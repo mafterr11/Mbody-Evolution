@@ -10,6 +10,7 @@
     "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
+    "3": "^2.1.0",
     "@gsap/react": "^2.1.2",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.2",
@@ -19,6 +20,7 @@
     "@radix-ui/react-separator": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.5",
+    "@tailwindcss/postcss": "^4.0.3",
     "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
